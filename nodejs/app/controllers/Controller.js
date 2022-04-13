@@ -1,4 +1,10 @@
 const modules = require("../modules/Function.js");
+
+exports.qm = (req, res) => {
+  let data = modules.qm();
+  res.send(data);
+};
+
 exports.q1 = (req, res) => {
   const stock = { a: 1200, b: 95, c: 115 }
   let data = modules.q1(stock);
