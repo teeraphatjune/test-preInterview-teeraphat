@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getKeyByValue(object, value) {
+            return Object.keys(object).find(key => {
+                return object[key] === value
+            });
+        }
+        const checkParenthesis = (str) => {
+            const types = { '(': ')', '{': '}', '[': ']' };
+            const arr = [];
+            for (const char of str) {
+                if (types[char]) { // get all open parenthesis
+                    arr.push(char);
+                }
+                else if (arr.pop() !== getKeyByValue(types, char)){ 
+                    // compare with close paranthesis it'll pop until its empty
+                    // it's need to be exactly same character from inner to outside
+                    // if not it'll return false
+                    return false;
+                }
+            }
+            return arr.length === 0;
+        }
+        console.log(checkParenthesis('({}}}})'))
+    </script>
+</body>
+
+</html>

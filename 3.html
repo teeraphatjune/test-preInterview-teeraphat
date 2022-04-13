@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const getCountry = async () => {
+            return [
+                { name: "Thailand", abbr: "th", remark: "", regionId: 1 },
+                { name: "Singapore", abbr: "sg", remark: "This is sg", regionId: 1 },
+                { name: "United State", abbr: "US", remark: "", regionId: 7 },
+                { name: "Brazil", abbr: "br", remark: "", regionId: 2 },
+                { name: "United Kingdom", abbr: "uk", remark: "", regionId: 5 },
+                { name: "France", abbr: "fr", remark: "", regionId: 5 },
+                { name: "Nigeria", abbr: "ng", remark: "", regionId: 3 },
+                { name: "Malaysia", abbr: "my", remark: "", regionId: 1 },
+            ];
+        }
+        const getRegion = async () => {
+            return [
+                { id: 1, name: "Asia" },
+                { id: 2, name: "South America" },
+                { id: 3, name: "Africa" },
+                { id: 4, name: "Antarctica" },
+                { id: 5, name: "Europe" },
+                { id: 6, name: "Australia" },
+                { id: 7, name: "North America" }
+            ];
+        }
+        main()
+
+        async function main() {
+            let country = await getCountry();
+            let region = await getRegion();
+            const res = country.reduce((acc, item) => {
+                let find = region.find(item2 => item2.id === item.regionId);
+                acc[item.abbr.toUpperCase()] = find.name;
+                return acc;
+            }, {});
+            console.log(res)
+        }
+    </script>
+</body>
+
+</html>
