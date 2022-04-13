@@ -151,3 +151,11 @@ exports.q5 = () => {
     result += "f.&nbsp;&nbsp;" + "n=34,&nbsp;m=1000000&nbsp;&nbsp;=>&nbsp;" + sum(34,1000000) + "<br>";
     return result;
 };
+
+const PokeFetcher = require("./PokeFetcher.js"); //temp
+exports.q6 = async () => {
+    let result;
+    listPokemon = new PokeFetcher(10,20);
+    result = await listPokemon.getListPokemon();
+    return result;
+};

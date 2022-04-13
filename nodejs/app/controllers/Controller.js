@@ -30,3 +30,9 @@ exports.q5 = (req, res) => {
   let data = modules.q5();
   res.send(data);
 };
+
+exports.q6 = async (req, res) => {
+  let data = await modules.q6();
+  // console.log(data);
+  res.send(data);
+};

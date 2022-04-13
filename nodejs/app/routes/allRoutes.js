@@ -7,4 +7,5 @@ module.exports = app => {
     app.get("/q3", controller.q3);
     app.get("/q4", controller.q4);
     app.get("/q5", controller.q5);
+    app.get("/q6", controller.q6);
   };
