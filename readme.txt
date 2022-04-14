@@ -14,4 +14,4 @@ http://localhost:3000/q5
 http://localhost:3000/q6?page=1&limit=10
 ** สามารถเปลี่ยน parameter page และ limit ได้ครับ
 --------------------------------------------
-Directory Logic ทั้งหมดอยู่ที่ .\nodejs\app\modules
+Directory Logic ทั้งหมดอยู่ที่ ./nodejs/app/modules
