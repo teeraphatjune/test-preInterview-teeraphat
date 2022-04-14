@@ -1,5 +1,5 @@
 Node.js(express.js)
-โปรเจ็คต์ที่ Directory อยู่ที่ ./nodejs
+โปรเจ็คต์ Directory อยู่ที่ ./nodejs
 
 คำตอบรบกวนรันเฟรมเวิร์คและคำตอบจะเป็นลิ้งตามนี้ครับ
 http://localhost:3000/qm
