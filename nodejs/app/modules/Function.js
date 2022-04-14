@@ -1,4 +1,4 @@
-const PokeFetcher = require('pokefetcher');
+const PokeFetcher = require('pokefetcher'); //API from https://pokeapi.co/
 
 exports.qm = () => {
     let result = `
