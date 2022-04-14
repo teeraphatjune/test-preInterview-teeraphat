@@ -1,3 +1,4 @@
+//Installed by "npm i pokefetcher"
 const PokeFetcher = require('pokefetcher'); //API from https://pokeapi.co/
 
 exports.qm = () => {
