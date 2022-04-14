@@ -1,15 +1,15 @@
-[![Express Logo](https://i.cloudup.com/zfY6lL7eFa-3000x3000.png)](http://expressjs.com/)
-
-  Fast, unopinionated, minimalist web framework for [node](http://nodejs.org).
-
-  [![NPM Version][npm-version-image]][npm-url]
-  [![NPM Install Size][npm-install-size-image]][npm-install-size-url]
-  [![NPM Downloads][npm-downloads-image]][npm-downloads-url]
-
-```js
-const express = require('express')
-const app = express()
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
-app.listen(3000)
+Node.js(express.js)
+คำตอบรบกวนรันเฟรมเวิร์คและคำตอบจะเป็นลิ้งตามนี้ครับ
+http://localhost:3000/qm
+- ลิ้งคำตอบทดสอบแนวคิดพื้นฐาน 3 ข้อ
+--------------------------------------------
+ลิ้งคำตอบ test การเขียนโปรแกรม
+http://localhost:3000/q1
+http://localhost:3000/q2
+http://localhost:3000/q3
+http://localhost:3000/q4
+http://localhost:3000/q5
+http://localhost:3000/q6?page=1&limit=10
+** สามารถเปลี่ยน parameter page และ limit ได้ครับ
+--------------------------------------------
+Directory Logic ทั้งหมดอยู่ที่ .\nodejs\app\modules
