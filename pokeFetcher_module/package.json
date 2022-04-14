@@ -1,15 +1,14 @@
 {
-  "name": "nodejs",
-  "version": "1.0.0",
+  "name": "pokefetcher",
+  "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "PokeFetcher.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3",
-    "pokefetcher": "^1.0.2"
+    "axios": "^0.26.1"
   }
 }

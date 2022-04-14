@@ -1,3 +1,5 @@
+const PokeFetcher = require('pokefetcher');
+
 exports.qm = () => {
     let result = `
     1). คุณรู้จักบริการใดของเราบ้าง? และมีความคิดเห็นต่อบริการแต่ละตัวของเราอย่างไรบ้าง <br>
@@ -152,10 +154,10 @@ exports.q5 = () => {
     return result;
 };
 
-const PokeFetcher = require("./PokeFetcher.js"); //temp
-exports.q6 = async () => {
+// const PokeFetcher = require("./PokeFetcher.js"); //temp
+exports.q6 = async (params) => {
     let result;
-    listPokemon = new PokeFetcher(10,20);
+    listPokemon = new PokeFetcher(params.limit, params.page);
     result = await listPokemon.getListPokemon();
     return result;
 };

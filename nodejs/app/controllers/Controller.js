@@ -32,7 +32,7 @@ exports.q5 = (req, res) => {
 };
 
 exports.q6 = async (req, res) => {
-  let data = await modules.q6();
-  // console.log(data);
+  let data = await modules.q6(req.query);
+  // console.log(req.query);
   res.send(data);
 };
